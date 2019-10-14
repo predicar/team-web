@@ -47,8 +47,97 @@ body {
   overflow-x: hidden;
 }
 
+.zapisnice-area {
+  display: flex;
+}
+
+.zapisnice-side {
+  flex: 1;
+  padding: 20px;
+}
+
+.zapisnice-title {
+  color: #333;
+  font-size: 25px;
+}
+
+.table {
+  color: #333;
+}
+
+#documents {
+  background-color: #61d2b4;
+}
+
 .team-row {
   margin-bottom: 30px;
+}
+
+.sprints-area {
+  display: flex;
+  margin-top: 15px;
+  width: 93%;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+}
+
+.sprint-row {
+  display: flex;
+  height: 200px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+  margin-bottom: 15px;
+}
+
+.sprint-row-separate {
+  height: 20px;
+  width: 100%;
+}
+
+.sprint-image {
+  width: 20%;
+}
+
+.sprint-icon {
+  width: 100%;
+}
+
+.sprint-text {
+  width: 80%;
+  padding: 30px 50px;
+  text-align: left;
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  /* border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px; */
+  /* border-radius: 25px; */
+}
+
+.sprint-text .left {
+  /* border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px; */
+}
+
+.sprint-text h4 {
+  color: #61d2b4;
+  font-weight: 700;
+  font-size: 32px;
+  text-transform: uppercase;
+  line-height: 22px;
+}
+
+.sprint-title {
+}
+
+.sprint-desc {
+  line-height: 18px;
+  margin: 12px 0px;
+}
+
+.profile-photo {
+  height: 300px;
+  object-fit: cover;
 }
 
 html {
@@ -63,6 +152,18 @@ p {
 a:hover,
 a:focus {
   color: #61d2b4;
+}
+
+a.turquoise-hover:focus {
+  color: #333;
+}
+
+a.white-hover:hover {
+  color: #fff;
+}
+
+a.white-hover:focus {
+  color: #333;
 }
 
 a {
@@ -99,12 +200,12 @@ a:focus {
 }
 
 a:not([href]):not([tabindex]) {
-  color: #fff;
+  color: #333;
 }
 
-a:not([href]):not([tabindex]):focus,
 a:not([href]):not([tabindex]):hover {
   color: #61d2b4;
+  cursor: pointer;
 }
 
 /* ==========================================================================
