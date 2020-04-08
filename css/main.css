@@ -60,6 +60,12 @@ body {
   z-index: 5;
 }
 
+@media screen and (max-width: 768px) {
+  .facemask-overlay {
+    display: none;
+  }
+}
+
 .facemask {
   padding: 64px;
 }
